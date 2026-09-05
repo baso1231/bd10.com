@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">BD10.com বাংলাদেশ Login Signup App Download BD10 বেস্ট গেমিং প্ল্যাটফর্ম</title>
+    <meta name="description" content="BD10 site official combined multi-layout portal for gaming, downloads, and bonuses.">
+    
+    <!-- গুগল সার্চ কনসোল এবং সার্চ ইঞ্জিনের জন্য ডোমেইন রেফারেন্স (ভিজিটররা দেখবে না, শুধু কোডে ও গুগলে থাকবে) -->
+    <link rel="canonical" href="https://bd10-com.site">
+    <meta name="google-site-verification" content="your-search-console-verification-code">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background-color: #041818; color: #fff; padding-top: 60px; padding-bottom: 95px; }
+        
+        .top-bar { position: fixed; top: 0; left: 0; width: 100%; background: #062424; border-bottom: 2px solid #00e699; z-index: 1000; padding: 10px 15px; display: flex; justify-content: space-between; align-items: center; }
+        .logo img { height: 28px; }
+        
+        .header-right-group { display: flex; align-items: center; gap: 8px; }
+        .mini-btn { background: #083333; color: #fff; border: 1px solid #00b377; padding: 6px 12px; font-size: 12px; font-weight: bold; border-radius: 6px; text-decoration: none; transition: 0.2s; white-space: nowrap; }
+        .mini-btn.reg { background: #00b377; border-color: #00e699; color: #041818; }
+        .mini-btn:hover { opacity: 0.85; }
+
+        .site-top-banner-text {
+            background: linear-gradient(90deg, #062424, #083333);
+            border-bottom: 1px solid #00b377;
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        /* কান্ট্রি সিলেক্টর একদম ছোট এবং ডানপাশে রাখা হয়েছে */
+        .page-inline-country-wrapper { 
+            max-width: 800px; 
+            margin: 8px auto 2px auto; 
+            padding: 0 15px; 
+            display: flex; 
+            justify-content: flex-end; 
+        }
+        .country-board-box { 
+            background: #062424; 
+            border: 1px solid #00b377; 
+            padding: 2px 4px; 
+            border-radius: 5px; 
+            display: inline-block; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.4); 
+        }
+        .country-board-box select { 
+            background: #041818; 
+            color: #ffd700; 
+            border: none; 
+            padding: 3px 6px; 
+            border-radius: 3px; 
+            font-size: 11px; 
+            font-weight: bold; 
+            outline: none; 
+            cursor: pointer; 
+            width: auto;
+        }
+        .country-board-box select:hover { color: #fff; }
+
+        .section-wrapper { max-width: 800px; margin: 0 auto; padding: 15px; }
+        .divider { border: 0; height: 2px; background: #00b377; margin: 30px 0; }
+        .section-title { color: #ffd700; font-size: 18px; margin-bottom: 12px; font-weight: bold; text-align: center; text-shadow: 0 2px 4px rgba(0,0,0,0.6); }
+
+        .card-box { background: #062424; border: 1px solid #00b377; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.6); }
+        .banner-box { width: 100%; background: #083333; border-radius: 8px; overflow: hidden; margin-bottom: 12px; border: 1px solid #00b377; }
+        .banner-box img { width: 100%; height: auto; display: block; object-fit: contain; }
+        
+        .notice { background: rgba(0, 179, 119, 0.15); border-left: 4px solid #00b377; padding: 8px; font-size: 13px; margin-bottom: 12px; border-radius: 4px; text-align: left; color: #e2e8f0; }
+        .btn-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 15px; }
+        .grid-item { background: linear-gradient(to bottom, #d4af37, #aa820a); border: 1px solid #ffd700; padding: 10px 5px; border-radius: 8px; color: #041818; text-decoration: none; font-size: 12px; font-weight: bold; transition: 0.3s; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .grid-item:hover { opacity: 0.9; transform: translateY(-1px); }
+
+        .vip-container { background: #062424; border: 2px solid #00b377; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 0 15px rgba(0, 179, 119, 0.2); }
+        .hero-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 10px; border: 1px solid #00b377; }
+        .action-btn { display: block; background: linear-gradient(45deg, #00b377, #008055); color: white; padding: 12px; margin: 8px 0; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(0, 179, 119, 0.4); border: 1px solid #00e699; }
+
+        .server-wrapper { background: #051d1d; border-radius: 10px; border: 1px solid #00b377; padding: 15px; }
+        .server-item { display: flex; justify-content: space-between; align-items: center; background: #083333; padding: 10px 15px; margin-bottom: 8px; border-radius: 8px; border: 1px solid #00b377; }
+        .server-name { font-weight: bold; color: #ffd700; font-size: 14px; }
+        .ping { color: #00e699; font-size: 12px; text-align: left; }
+        .go-btn { background: #00b377; color: #041818; padding: 5px 12px; border-radius: 5px; text-decoration: none; font-size: 13px; font-weight: bold; border: 1px solid #00e699; }
+
+        .minimal-box { background: #062424; padding: 15px; border-radius: 12px; text-align: center; border: 1px solid #00b377; box-shadow: 0 10px 25px rgba(0, 179, 119, 0.2); }
+        .link-btn { display: block; width: 100%; background: linear-gradient(to bottom, #d4af37, #aa820a); color: #041818; padding: 12px; margin-bottom: 8px; border-radius: 8px; text-decoration: none; font-weight: bold; border: 1px solid #ffd700; font-size: 14px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .link-btn:hover { opacity: 0.9; }
+
+        .bottom-bar { 
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            background: #041818; 
+            border-top: 1px solid #00b377; 
+            padding: 10px 15px; 
+            text-align: center; 
+            z-index: 1000; 
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.9);
+        }
+        
+        @keyframes bounceGlow {
+            0%, 100% {
+                transform: translateY(0);
+                box-shadow: 0 4px 10px rgba(0, 179, 119, 0.4);
+            }
+            50% {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 18px rgba(0, 230, 153, 0.6);
+            }
+        }
+
+        .main-btn { 
+            display: block; 
+            width: 100%; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: linear-gradient(45deg, #00b377, #008055);
+            color: #ffffff; 
+            padding: 12px; 
+            font-size: 14px; 
+            font-weight: bold; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            border: 1px solid #00e699; 
+            box-shadow: 0 4px 10px rgba(0, 179, 119, 0.4);
+            animation: bounceGlow 1.6s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="logo">
+            <a href="https://bd10-com.site"><img src="logo.png" alt="BD10.site"></a>
+        </div>
+        <div class="header-right-group">
+            <a href="https://www.f333.am/?dl=2f5ctf" class="mini-btn" id="login-text">Login</a>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="mini-btn reg" id="reg-text">Register</a>
+        </div>
+    </div>
+
+    <div style="margin-top: 45px;" class="site-top-banner-text">
+        <span style="font-weight: bold; color: #ffd700; font-size: 14px;" id="top-app-title">BD10 APP</span>
+    </div>
+
+    <div class="page-inline-country-wrapper">
+        <div class="country-board-box">
+            <select id="countrySelect">
+                <option value="BD" selected>🇧🇩 Bangladesh</option>
+                <option value="IN">🇮🇳 India</option>
+                <option value="PK">🇵🇰 Pakistan</option>
+                <option value="US">🇺🇸 United States</option>
+                <option value="GB">🇬🇧 United Kingdom</option>
+                <option value="AE">🇦🇪 United Arab Emirates</option>
+                <option value="SA">🇸🇦 Saudi Arabia</option>
+                <option value="GLOBAL">🌐 Global</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="section-wrapper">
+        <div class="section-title" id="main-sec-title">--- Main Section ---</div>
+        <div class="card-box">
+            <div class="banner-box"><img src="img1.jpg" alt="Banner"></div>
+            <div class="notice" id="notice-text">BD10.com এর প্রথম ডিপোজিটে আকর্ষণীয় ক্যাশব্যাক বোনাস!</div>
+            <div class="btn-grid">
+                <a href="https://www.f333.am/?dl=2f5ctf" class="grid-item" id="nav-home">🏠 হোম</a>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="grid-item" id="nav-games">🎮 গেমস</a>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="grid-item" id="nav-offers">🎁 অফার</a>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="grid-item" id="nav-account">👤 অ্যাকাউন্ট</a>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="grid-item" id="nav-deposit">💰 ডিপোজিট</a>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="grid-item" id="nav-help">📞 হেল্পলাইন</a>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="vip-container">
+            <img src="img2.jpg" alt="BD10.com" class="hero-img">
+            <p style="margin-bottom: 12px; color: #ccc; font-size: 14px;" id="vip-desc">নিচের অপশন থেকে আপনার প্রয়োজনীয় লিঙ্কে প্রবেশ করুন:</p>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="action-btn" id="btn-login-dir">🚀 সরাসরি প্রবেশ করুন (Login)</a>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="action-btn" id="btn-reg-dir">📝 নতুন অ্যাকাউন্ট খুলুন (Register)</a>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="action-btn" id="btn-app-dir">📥 অ্যান্ড্রয়েড অ্যাপ ডাউনলোড করুন</a>
+        </div>
+
+        <hr class="divider">
+
+        <div class="server-wrapper">
+            <div class="section-title" style="margin-bottom: 15px;" id="server-title">🌐 বাংলাদেশ ফাস্ট সার্ভার গেটওয়ে</div>
+            
+            <div class="server-item">
+                <div>
+                    <span class="server-name" id="s1-name">BD Server 01 (Fast)</span>
+                    <div class="ping">● Ping: 35ms</div>
+                </div>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="go-btn" id="s1-btn">Connect</a>
+            </div>
+
+            <div class="server-item">
+                <div>
+                    <span class="server-name" id="s2-name">BD Server 02 (Stable)</span>
+                    <div class="ping">● Ping: 42ms</div>
+                </div>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="go-btn" id="s2-btn">Connect</a>
+            </div>
+
+            <div class="server-item">
+                <div>
+                    <span class="server-name" id="s3-name">BD Server 03 (VIP)</span>
+                    <div class="ping">● Ping: 28ms</div>
+                </div>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="go-btn" id="s3-btn">Connect</a>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="minimal-box">
+            <div style="font-size: 22px; font-weight: 900; color: #ffd700; margin-bottom: 15px;" id="q-title">BD10 কুইক অ্যাক্সেস</div>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="link-btn" id="q-btn1">✨ অফিশিয়াল সাইট ভিজিট করুন</a>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="link-btn" id="q-btn2">🎁 বোনাস ও প্রমোশন দেখুন</a>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="link-btn" id="q-btn3">📥 অ্যাপ ডাউনলোড (APK)</a>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="link-btn" id="q-btn4">💬 কাস্টমার সাপোর্ট</a>
+        </div>
+
+    </div>
+
+    <div class="bottom-bar">
+        <a href="https://www.f333.am/?dl=2f5ctf" class="main-btn" id="footer-btn">📥 BD10 অ্যাপ ডাউনলোড করুন</a>
+    </div>
+
+    <!-- গোপন ডোমেইন রেফারেন্স যা Google Search Console এবং বট এর জন্য কোডে থাকবে কিন্তু সাইটে সাধারণ চোখে দেখা যাবে না -->
+    <div style="display:none;" aria-hidden="true">
+        <a href="https://bd10-com.site">BD10 Official Domain Portal bd10-com.site</a>
+    </div>
+
+    <script>
+        const countryData = {
+            "BD": {
+                pageTitle: "BD10.com বাংলাদেশ Login Signup App Download BD10 বেস্ট গেমিং প্ল্যাটফর্ম",
+                appTitle: "BD10 APP - BANGLADESH",
+                login: "Login", reg: "Register",
+                mainTitle: "--- বাংলাদেশ পোর্টাল ---",
+                notice: "BD10.com-এ প্রথম ডিপোজিটে আকর্ষণীয় ক্যাশব্যাক বোনাস!",
+                home: "🏠 হোম", games: "🎮 গেমস", offers: "🎁 অফার", account: "👤 অ্যাকাউন্ট", deposit: "💰 ডিপোজিট", help: "📞 হেল্পলাইন",
+                vipDesc: "নিচের অপশন থেকে আপনার প্রয়োজনীয় লিঙ্কে প্রবেশ করুন:",
+                btnLogin: "🚀 সরাসরি প্রবেশ করুন (Login)", btnReg: "📝 নতুন অ্যাকাউন্ট খুলুন (Register)", btnApp: "📥 অ্যান্ড্রয়েড অ্যাপ ডাউনলোড করুন",
+                serverTitle: "🌐 বাংলাদেশ ফাস্ট সার্ভার গেটওয়ে",
+                s1: "BD Server 01 (Fast)", s2: "BD Server 02 (Stable)", s3: "BD Server 03 (VIP)", connect: "Connect",
+                qTitle: "BD10 কুইক অ্যাক্সেস",
+                q1: "✨ অফিশিয়াল সাইট ভিজিট করুন", q2: "🎁 বোনাস ও প্রমোশন দেখুন", q3: "📥 অ্যাপ ডাউনলোড (APK)", q4: "💬 কাস্টমার সাপোর্ট",
+                footer: "📥 BD10 বাংলাদেশ অফিশিয়াল অ্যাপ ডাউনলোড করুন"
+            },
+            "IN": {
+                pageTitle: "BD10.com India Login Signup App Download BD10 Best Gaming Platform",
+                appTitle: "BD10 APP - INDIA",
+                login: "Login", reg: "Register",
+                mainTitle: "--- India Portal ---",
+                notice: "Get amazing cashback bonus on your first deposit at BD10 India!",
+                home: "🏠 Home", games: "🎮 Games", offers: "🎁 Offers", account: "👤 Account", deposit: "💰 Deposit", help: "📞 Support",
+                vipDesc: "Access your portal using the links below:",
+                btnLogin: "🚀 Direct Login", btnReg: "📝 Register Account", btnApp: "📥 Download Android App",
+                serverTitle: "🌐 India Fast Server Gateway",
+                s1: "IN Server 01 (Fast)", s2: "IN Server 02 (Stable)", s3: "IN Server 03 (VIP)", connect: "Connect",
+                qTitle: "BD10 Quick Access",
+                q1: "✨ Visit Official Site", q2: "🎁 View Promotions", q3: "📥 Download App (APK)", q4: "💬 Live Support",
+                footer: "📥 Download BD10 India Official App"
+            },
+            "PK": {
+                pageTitle: "BD10.com Pakistan Login Signup App Download BD10 Best Gaming Platform",
+                appTitle: "BD10 APP - PAKISTAN",
+                login: "Login", reg: "Register",
+                mainTitle: "--- Pakistan Portal ---",
+                notice: "BD10.com پر پہلی ڈپোজিট پر شاندار کیشব্যাক بونس حاصل کریں!",
+                home: "🏠 Home", games: "🎮 Games", offers: "🎁 Offers", account: "👤 Account", deposit: "💰 Deposit", help: "📞 Support",
+                vipDesc: "Select your preferred link below:",
+                btnLogin: "🚀 Direct Login", btnReg: "📝 Register New Account", btnApp: "📥 Download Android App",
+                serverTitle: "🌐 Pakistan Fast Server Gateway",
+                s1: "PK Server 01 (Fast)", s2: "PK Server 02 (Stable)", s3: "PK Server 03 (VIP)", connect: "Connect",
+                qTitle: "BD10 Quick Access",
+                q1: "✨ Visit Official Site", q2: "🎁 View Bonuses", q3: "📥 Download App (APK)", q4: "💬 Customer Support",
+                footer: "📥 Download BD10 Pakistan Official App"
+            },
+            "US": {
+                pageTitle: "BD10.com USA Login Signup App Download BD10 Best Gaming Platform",
+                appTitle: "BD10 APP - USA",
+                login: "Login", reg: "Register",
+                mainTitle: "--- US Portal ---",
+                notice: "Welcome to BD10 USA! Enjoy exclusive rewards and fast gaming experience.",
+                home: "🏠 Home", games: "🎮 Games", offers: "🎁 Offers", account: "👤 Account", deposit: "💰 Deposit", help: "📞 Support",
+                vipDesc: "Select your preferred gateway option below:",
+                btnLogin: "🚀 Direct Login", btnReg: "📝 Register Account", btnApp: "📥 Download Android App",
+                serverTitle: "🌐 US High-Speed Server Gateway",
+                s1: "US Server 01 (Fast)", s2: "US Server 02 (Stable)", s3: "US Server 03 (VIP)", connect: "Connect",
+                qTitle: "BD10 Quick Access",
+                q1: "✨ Visit Official Site", q2: "🎁 View Promotions", q3: "📥 Download App (APK)", q4: "💬 Live Support",
+                footer: "📥 Download BD10 USA Official App"
+            },
+            "GB": {
+                pageTitle: "BD10.com UK Login Signup App Download BD10 Best Gaming Platform",
+                appTitle: "BD10 APP - UK",
+                login: "Login", reg: "Register",
+                mainTitle: "--- UK Portal ---",
+                notice: "Get amazing welcome bonuses on your first deposit at BD10 UK!",
+                home: "🏠 Home", games: "🎮 Games", offers: "🎁 Offers", account: "👤 Account", deposit: "💰 Deposit", help: "📞 Support",
+                vipDesc: "Access your portal using the links below:",
+                btnLogin: "🚀 Secure Login", btnReg: "📝 Create Account", btnApp: "📥 Download App",
+                serverTitle: "🌐 UK Fast Server Gateway",
+                s1: "UK Server 01 (Fast)", s2: "UK Server 02 (Stable)", s3: "UK Server 03 (VIP)", connect: "Connect",
+                qTitle: "BD10 Quick Access",
+                q1: "✨ Visit Official Site", q2: "🎁 View Bonuses", q3: "📥 Download APK", q4: "💬 Help Center",
+                footer: "📥 Download BD10 UK Official App"
+            },
+            "AE": {
+                pageTitle: "BD10.com UAE Login Signup App Download BD10 Best Gaming Platform",
+                appTitle: "BD10 APP - UAE",
+                login: "Login", reg: "Register",
+                mainTitle: "--- UAE Portal ---",
+                notice: "Enjoy exclusive rewards and top-tier gaming experience in UAE with BD10!",
+                home: "🏠 Home", games: "🎮 Games", offers: "🎁 Offers", account: "👤 Account", deposit: "💰 Deposit", help: "📞 Support",
+                vipDesc: "Choose your access option below:",
+                btnLogin: "🚀 Direct Login", btnReg: "📝 Register Now", btnApp: "📥 Download App",
+                serverTitle: "🌐 UAE Fast Server Gateway",
+                s1: "UAE Server 01 (Fast)", s2: "UAE Server 02 (Stable)", s3: "UAE Server 03 (VIP)", connect: "Connect",
+                qTitle: "BD10 Quick Access",
+                q1: "✨ Visit Official Site", q2: "🎁 View Promotions", q3: "📥 Download App", q4: "💬 Support",
+                footer: "📥 Download BD10 UAE Official App"
+            },
+            "SA": {
+                pageTitle: "BD10.com Saudi Arabia Login Signup App Download BD10 Best Gaming Platform",
+                appTitle: "BD10 APP - KSA",
+                login: "Login", reg: "Register",
+                mainTitle: "--- KSA Portal ---",
+                notice: "Welcome to BD10 KSA! Get special bonuses on your first deposit.",
+                home: "🏠 Home", games: "🎮 Games", offers: "🎁 Offers", account: "👤 Account", deposit: "💰 Deposit", help: "📞 Support",
+                vipDesc: "Select your preferred link below:",
+                btnLogin: "🚀 Direct Login", btnReg: "📝 Register Account", btnApp: "📥 Download App",
+                serverTitle: "🌐 KSA Fast Server Gateway",
+                s1: "KSA Server 01 (Fast)", s2: "KSA Server 02 (Stable)", s3: "KSA Server 03 (VIP)", connect: "Connect",
+                qTitle: "BD10 Quick Access",
+                q1: "✨ Visit Official Site", q2: "🎁 View Offers", q3: "📥 Download App", q4: "💬 Live Chat",
+                footer: "📥 Download BD10 KSA Official App"
+            },
+            "GLOBAL": {
+                pageTitle: "BD10.com Global Login Signup App Download BD10 Best Gaming Platform",
+                appTitle: "BD10 APP - GLOBAL",
+                login: "Login", reg: "Register",
+                mainTitle: "--- Global Portal ---",
+                notice: "Get amazing cashback bonus on your first deposit at BD10.com!",
+                home: "🏠 Home", games: "🎮 Games", offers: "🎁 Offers", account: "👤 Account", deposit: "💰 Deposit", help: "📞 Support",
+                vipDesc: "Choose your preferred link from the options below:",
+                btnLogin: "🚀 Direct Login", btnReg: "📝 Register New Account", btnApp: "📥 Download Android App",
+                serverTitle: "🌐 BD10 Global Fast Server Gateway",
+                s1: "Global Server 01 (Fast)", s2: "Global Server 02 (Stable)", s3: "Global Server 03 (VIP)", connect: "Connect",
+                qTitle: "BD10 Quick Access",
+                q1: "✨ Visit Official Site", q2: "🎁 View Bonuses & Promotions", q3: "📥 Download App (APK)", q4: "💬 Customer Support",
+                footer: "📥 Download BD10 Official App"
+            }
+        };
+
+        function changeCountry(code) {
+            let data = countryData[code] || countryData["GLOBAL"];
+            
+            document.title = data.pageTitle;
+            document.getElementById("top-app-title").innerText = data.appTitle;
+            document.getElementById("login-text").innerText = data.login;
+            document.getElementById("reg-text").innerText = data.reg;
+            document.getElementById("main-sec-title").innerText = data.mainTitle;
+            document.getElementById("notice-text").innerText = data.notice;
+            document.getElementById("nav-home").innerText = data.home;
+            document.getElementById("nav-games").innerText = data.games;
+            document.getElementById("nav-offers").innerText = data.offers;
+            document.getElementById("nav-account").innerText = data.account;
+            document.getElementById("nav-deposit").innerText = data.deposit;
+            document.getElementById("nav-help").innerText = data.help;
+            document.getElementById("vip-desc").innerText = data.vipDesc;
+            document.getElementById("btn-login-dir").innerText = data.btnLogin;
+            document.getElementById("btn-reg-dir").innerText = data.btnReg;
+            document.getElementById("btn-app-dir").innerText = data.btnApp;
+            document.getElementById("server-title").innerText = data.serverTitle;
+            document.getElementById("s1-name").innerText = data.s1;
+            document.getElementById("s2-name").innerText = data.s2;
+            document.getElementById("s3-name").innerText = data.s3;
+            document.getElementById("s1-btn").innerText = data.connect;
+            document.getElementById("s2-btn").innerText = data.connect;
+            document.getElementById("s3-btn").innerText = data.connect;
+            document.getElementById("q-title").innerText = data.qTitle;
+            document.getElementById("q-btn1").innerText = data.q1;
+            document.getElementById("q-btn2").innerText = data.q2;
+            document.getElementById("q-btn3").innerText = data.q3;
+            document.getElementById("q-btn4").innerText = data.q4;
+            document.getElementById("footer-btn").innerText = data.footer;
+        }
+
+        document.getElementById("countrySelect").addEventListener("change", function() {
+            changeCountry(this.value);
+        });
+
+        window.addEventListener("DOMContentLoaded", function() {
+            changeCountry(document.getElementById("countrySelect").value);
+        });
+    </script>
+</body>
+</html>
