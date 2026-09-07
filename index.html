@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">BD10.com বাংলাদেশ Login Signup App Download BD10 বেস্ট গেমিং প্ল্যাটফর্ম</title>
+    <meta name="description" content="BD10 site official combined multi-layout portal for gaming, downloads, and bonuses in Bangladesh.">
+    
+    <link rel="canonical" href="https://bd10-com.site">
+    <meta name="google-site-verification" content="your-search-console-verification-code">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background-color: #041818; color: #fff; padding-top: 60px; padding-bottom: 95px; }
+        
+        .top-bar { position: fixed; top: 0; left: 0; width: 100%; background: #062424; border-bottom: 2px solid #00e699; z-index: 1000; padding: 10px 15px; display: flex; justify-content: space-between; align-items: center; }
+        .logo img { height: 28px; }
+        
+        .header-right-group { display: flex; align-items: center; gap: 8px; }
+        .mini-btn { background: #083333; color: #fff; border: 1px solid #00b377; padding: 6px 12px; font-size: 12px; font-weight: bold; border-radius: 6px; text-decoration: none; transition: 0.2s; white-space: nowrap; }
+        .mini-btn.reg { background: #00b377; border-color: #00e699; color: #041818; }
+        .mini-btn:hover { opacity: 0.85; }
+
+        .site-top-banner-text {
+            background: linear-gradient(90deg, #062424, #083333);
+            border-bottom: 1px solid #00b377;
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        .section-wrapper { max-width: 800px; margin: 0 auto; padding: 15px; }
+        .divider { border: 0; height: 2px; background: #00b377; margin: 30px 0; }
+        .section-title { color: #ffd700; font-size: 18px; margin-bottom: 12px; font-weight: bold; text-align: center; text-shadow: 0 2px 4px rgba(0,0,0,0.6); }
+
+        .card-box { background: #062424; border: 1px solid #00b377; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.6); }
+        .banner-box { width: 100%; background: #083333; border-radius: 8px; overflow: hidden; margin-bottom: 12px; border: 1px solid #00b377; }
+        .banner-box img { width: 100%; height: auto; display: block; object-fit: contain; }
+        
+        .notice { background: rgba(0, 179, 119, 0.15); border-left: 4px solid #00b377; padding: 8px; font-size: 13px; margin-bottom: 12px; border-radius: 4px; text-align: left; color: #e2e8f0; }
+        .btn-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 15px; }
+        .grid-item { background: linear-gradient(to bottom, #d4af37, #aa820a); border: 1px solid #ffd700; padding: 10px 5px; border-radius: 8px; color: #041818; text-decoration: none; font-size: 12px; font-weight: bold; transition: 0.3s; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .grid-item:hover { opacity: 0.9; transform: translateY(-1px); }
+
+        .vip-container { background: #062424; border: 2px solid #00b377; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 0 15px rgba(0, 179, 119, 0.2); }
+        .hero-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 10px; border: 1px solid #00b377; }
+        .action-btn { display: block; background: linear-gradient(45deg, #00b377, #008055); color: white; padding: 12px; margin: 8px 0; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(0, 179, 119, 0.4); border: 1px solid #00e699; }
+
+        .server-wrapper { background: #051d1d; border-radius: 10px; border: 1px solid #00b377; padding: 15px; }
+        .server-item { display: flex; justify-content: space-between; align-items: center; background: #083333; padding: 10px 15px; margin-bottom: 8px; border-radius: 8px; border: 1px solid #00b377; }
+        .server-name { font-weight: bold; color: #ffd700; font-size: 14px; }
+        .ping { color: #00e699; font-size: 12px; text-align: left; }
+        .go-btn { background: #00b377; color: #041818; padding: 5px 12px; border-radius: 5px; text-decoration: none; font-size: 13px; font-weight: bold; border: 1px solid #00e699; }
+
+        .minimal-box { background: #062424; padding: 15px; border-radius: 12px; text-align: center; border: 1px solid #00b377; box-shadow: 0 10px 25px rgba(0, 179, 119, 0.2); }
+        .link-btn { display: block; width: 100%; background: linear-gradient(to bottom, #d4af37, #aa820a); color: #041818; padding: 12px; margin-bottom: 8px; border-radius: 8px; text-decoration: none; font-weight: bold; border: 1px solid #ffd700; font-size: 14px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .link-btn:hover { opacity: 0.9; }
+
+        .bottom-bar { 
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            background: #041818; 
+            border-top: 1px solid #00b377; 
+            padding: 10px 15px; 
+            text-align: center; 
+            z-index: 1000; 
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.9);
+        }
+        
+        @keyframes bounceGlow {
+            0%, 100% {
+                transform: translateY(0);
+                box-shadow: 0 4px 10px rgba(0, 179, 119, 0.4);
+            }
+            50% {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 18px rgba(0, 230, 153, 0.6);
+            }
+        }
+
+        .main-btn { 
+            display: block; 
+            width: 100%; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: linear-gradient(45deg, #00b377, #008055);
+            color: #ffffff; 
+            padding: 12px; 
+            font-size: 14px; 
+            font-weight: bold; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            border: 1px solid #00e699; 
+            box-shadow: 0 4px 10px rgba(0, 179, 119, 0.4);
+            animation: bounceGlow 1.6s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="logo">
+            <a href="https://bd10-com.site"><img src="10070.png" alt="BD10.site"></a>
+        </div>
+        <div class="header-right-group">
+            <a href="https://www.f333.am/?dl=2f5ctf" class="mini-btn">লগইন</a>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="mini-btn reg">নিবন্ধন</a>
+        </div>
+    </div>
+
+    <div style="margin-top: 45px;" class="site-top-banner-text">
+        <span style="font-weight: bold; color: #ffd700; font-size: 14px;">BD10 অ্যাপ - বাংলাদেশ</span>
+    </div>
+
+    <div class="section-wrapper">
+        <div class="section-title">--- বাংলাদেশ অফিশিয়াল পোর্টাল ---</div>
+        <div class="card-box">
+            <div class="banner-box"><img src="10072.jpg" alt="Banner"></div>
+            <div class="notice">BD10.com এর প্রথম ডিপোজিটে আকর্ষণীয় ক্যাশব্যাক বোনাস!</div>
+            <div class="btn-grid">
+                <a href="https://www.f333.am/?dl=2f5ctf" class="grid-item">🏠 হোম</a>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="grid-item">🎮 গেমস</a>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="grid-item">🎁 অফার</a>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="grid-item">👤 অ্যাকাউন্ট</a>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="grid-item">💰 ডিপোজিট</a>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="grid-item">📞 হেল্পলাইন</a>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="vip-container">
+            <img src="10067.jpg" alt="BD10.com" class="hero-img">
+            <p style="margin-bottom: 12px; color: #ccc; font-size: 14px;">নিচের অপশন থেকে আপনার প্রয়োজনীয় লিঙ্কে প্রবেশ করুন:</p>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="action-btn">🚀 সরাসরি প্রবেশ করুন (লগইন)</a>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="action-btn">📝 নতুন অ্যাকাউন্ট খুলুন (নিবন্ধন)</a>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="action-btn">📥 অ্যান্ড্রয়েড অ্যাপ ডাউনলোড করুন</a>
+        </div>
+
+        <hr class="divider">
+
+        <div class="server-wrapper">
+            <div class="section-title" style="margin-bottom: 15px;">🌐 বাংলাদেশ ফাস্ট সার্ভার গেটওয়ে</div>
+            
+            <div class="server-item">
+                <div>
+                    <span class="server-name">BD সার্ভার ০১ (ফাস্ট)</span>
+                    <div class="ping">● পিং: ৩৫ms</div>
+                </div>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="go-btn">সংযুক্ত হন</a>
+            </div>
+
+            <div class="server-item">
+                <div>
+                    <span class="server-name">BD সার্ভার ০২ (স্টেবল)</span>
+                    <div class="ping">● পিং: ৪২ms</div>
+                </div>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="go-btn">সংযুক্ত হন</a>
+            </div>
+
+            <div class="server-item">
+                <div>
+                    <span class="server-name">BD সার্ভার ০৩ (ভিআইপি)</span>
+                    <div class="ping">● পিং: ২৮ms</div>
+                </div>
+                <a href="https://www.f333.am/?dl=2f5ctf" class="go-btn">সংযুক্ত হন</a>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="minimal-box">
+            <div style="font-size: 22px; font-weight: 900; color: #ffd700; margin-bottom: 15px;">BD10 কুইক অ্যাক্সেস</div>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="link-btn">✨ অফিশিয়াল সাইট ভিজিট করুন</a>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="link-btn">🎁 বোনাস ও প্রমোশন দেখুন</a>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="link-btn">📥 অ্যাপ ডাউনলোড (APK)</a>
+            <a href="https://www.f333.am/?dl=2f5ctf" class="link-btn">💬 কাস্টমার সাপোর্ট</a>
+        </div>
+
+    </div>
+
+    <div class="bottom-bar">
+        <a href="https://www.f333.am/?dl=2f5ctf" class="main-btn">📥 BD10 বাংলাদেশ অফিশিয়াল অ্যাপ ডাউনলোড করুন</a>
+    </div>
+
+    <div style="display:none;" aria-hidden="true">
+        <a href="https://bd10-com.site">BD10 Official Domain Portal bd10-com.site</a>
+    </div>
+
+</body>
+</html>
